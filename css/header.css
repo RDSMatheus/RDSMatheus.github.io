@@ -1,0 +1,35 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.menu a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .cabecalho {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  .cabecalho img{
+    margin: 0 auto;
+  }
+  .cabecalho ul a {
+    background-color: #f5f5f5;
+    padding: .8rem 1rem;
+  }
+}
